@@ -1,0 +1,24 @@
+<html>
+
+	<head>
+		<title>	CyberSecurity Challenges </title>
+	</head>
+
+	<body>
+		<script>
+			let xhr = new XMLHTTPRequest();
+			xhr.onreadystatechange = () => {
+				document.getElementById("put-the-text-here").innerHTML = xhr.responseText; 
+			}
+			function execute(){
+				xhr.open("GET", "get-this", true);
+				xhr.send();
+			}
+		</script>
+
+		<button onclick="execute();">Get new flag!</button>
+
+		<p id="put-the-text-here"></p>
+	</body>
+
+</html>
