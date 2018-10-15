@@ -3,7 +3,7 @@ var fs = require('fs'),
     https = require('https'),
     express = require('express');
 
-var port = 7071, index = fs.readFileSync('./index.html');
+var port = 443, index = fs.readFileSync('./index.html');
 
 var options = {
     key: fs.readFileSync('./key.pem'),
